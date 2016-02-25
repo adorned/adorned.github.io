@@ -1,4 +1,4 @@
-function recordEmail() {
+function recordEmail(email) {
   var ref = new Firebase('https://adornedbynomad.firebaseio.com');
   ref.authAnonymously(function(error, authData) {
     if (error) {
@@ -6,10 +6,10 @@ function recordEmail() {
       return;
     } 
 
-    var email = 'foo@bar.com';
     var users = ref.child('users');
     users.child(authData.uid).set({
-      email: email
+      email: email,
+      loc: location.hostname
     });
   }, { remember: 'none' });
 }
