@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: Times, "Times New Roman", Georgia, serif;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: black;
+  font-weight: bold;
+}
+
+.header {
+  position: relative;
+  height: 315px;
+  width: 100%;
+}
+
+.header img {
+  position:absolute;
+  width: 100%;
+  height: 315px;
+  margin: 0 auto;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#secondimage {
+  opacity: 0;
+}
+
+#thirdimage {
+  opacity: 0;
+}
+
+.header > .email {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  padding: 20px;
+}
+
+.email > button {
+  border: 1px solid;
+  background-color: coral;
+  color: white;
+  box-shadow: 2px 2px 8px 1px rgba(175,191,192,0.56);
+}
+
+.message {
+  display: none;
+}
+
+.saved > .message {
+  display: block;
+}
+
+.saved > #email {
+  display: none;
+}
+.saved > #saveemail {
+  display: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 50px;
+  overflow: visible;
+  background-color: #FBFDF2;
+}
+
+.primary {
+  flex-grow: 1;
+  padding-right: 10px;
+}
+
+.primary > h2 {
+  font-weight: bold;
+  color: black;
+  font-size: larger;
+  margin-top: 40px;
+}
+
+.primary > h2:first-child {
+  margin-top: 10px;
+}
+
+.secondary {
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+.linkbox {
+  padding: 10px;
+  background-color: #C2D3CD;
+  margin: 20px 0 20px 20px;;
+  border-radius: 10px;
+}
+
+.linkbox > div {
+  padding: 15px 0;
+}
+
+.linkbox > h3 {
+  background-color: #56494C;
+  padding: 8px 16px;
+  color: white;
+  margin-left: -20px;
+  margin-right: -20px;
+  text-align: center;
+}
