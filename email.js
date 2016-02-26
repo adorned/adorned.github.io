@@ -34,3 +34,4 @@ function handleKey(e) {
   }
 }
 
+document.getElementById('email').focus();
