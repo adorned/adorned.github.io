@@ -1,5 +1,4 @@
 
-
 (function() {
   'use strict';
   let firebaseUtils = require("./firebase-utils");

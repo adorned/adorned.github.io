@@ -3,7 +3,7 @@
   var imageIds = [ 'firstimage', 'secondimage', 'thirdimage' ];
   var currentIndex = 0;
 
-  setInterval(function() {
+  var updateBackground = function() {
     currentIndex;
     document.getElementById(imageIds[currentIndex]).style.opacity = 0;
     currentIndex++;
@@ -11,5 +11,7 @@
       currentIndex = 0;
     }
     document.getElementById(imageIds[currentIndex]).style.opacity = 100;
-  }, 5000);
+  };
+
+  setInterval(updateBackground, 5000);
 })();

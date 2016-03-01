@@ -7,27 +7,30 @@
     <link href='https://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <div class="header">
-      <img id="firstimage" src="images/adorned_1.jpg"/>
-      <img id="secondimage" src="images/adorned_2.jpg"/>
-      <img id="thirdimage" src="images/adorned_3.jpg"/>
+    <div class="header" id="header">
+      <div class="imgContainer">
+        <img id="firstimage" src="images/adorned_1.jpg"/>
+        <img id="secondimage" src="images/adorned_2.jpg"/>
+        <img id="thirdimage" src="images/adorned_3.jpg"/>
+        <canvas id="canvas"/>
+      </div>
       <!--
       -->
     </div>
+    <div class="container">
     <div class="content">
       <div class="primary">
         <h2>About Adorned</h2>
-        <p>After 8 years in Boulder, the Nomad Bead Merchant family is growing. We are excited to announce a companion jewelry store, Adorned, opening this April. Adorned will be located directly next to Nomad at 9th and Walnut (in a portion of the Clutter space).</p>
-        <p>We want a store that features the beautiful and unique jewelry from Boulder’s own local artists. Our goal will be to pull together an eclectic sampling of different kinds of work for our customers. From pearls to peyote stitch, we are excited for this opportunity to see what the beading, silversmithing, creative Boulder community has to offer.</p>
+        <p>After 8 years in Boulder, the Nomad Bead Merchant family is growing. We are excited to announce a companion jewelry store, Adorned, opening this April. Adorned will be located directly next to Nomad at 9th and Walnut (in a portion of the former Clutter space).</p>
+        <p>We want a store that features the beautiful and unique jewelry from Boulder’s own local artists. Our goal is to pull together an eclectic sampling of different kinds of work for our customers. From pearls to peyote stitch, we are excited for this opportunity to see what the beading, silversmithing, creative Boulder community has to offer.</p>
 
         <h2>Join Us</h2>
-        <p>We are looking for high-quality locally made jewelry to consign at Adorned. Each artist will have to submit a representative sample of the work they wish to put in the store (12-15 pieces), with suggested retail pricing, for consideration to a jury of the owners for review. Silversmiths, jewelers and beading artists of all persuasions are welcome to apply.</p>
-        <p>We will begin scheduling our reviews as of March 1, and are going to ask that you leave your pieces with us for a few days. We will seriously consider all submissions, and will try to provide useful feedback if we find we are unable to accept your work. Originality of design and quality of material and finish will be critical to a positive outcome.</p>
-        <p>Pricing may run from $15 up to $5000 per piece. Adorned will pay 50% of the sales price to each artist. Consignment fees will be calculated and paid monthly, on or around the 10th of each month. Please be assured that we have a lot of experience with consignment, and that we are scrupulous with our consignors and pay promptly. </p>
-        <p>If you are interested in submitting your work for consideration, please complete the consignment form here or send an email to Mary at mary@nomadbeads.com</p>
+        <p>We are looking for high-quality locally made jewelry to consign at Adorned. We are asking each artists to complete an application and submit a representative sample of the work they wish to put in the store for consideration to a jury of the owners for review. Items can range from $15 to $5000 dollars. We will seriously consider all submissions, and will try to provide useful feedback if we find we are unable to accept your work. Originality of design and quality of material and finish will be critical to a positive outcome. If you are interested in joining us please complete the Adorned Consignment Form. We will begin scheduling our reviews as of March 1.</p>
+        <p>Are you looking for an outlet for your pieces? Nomad Bead Merchants is opening a companion jewelry store, Adorned, on or around April 1st. It will be located next to Nomad, at 1909 9th Street in Boulder, kitty-corner from the St. Julian Hotel. We are looking for high-quality locally made jewelry to consign. Each artist will have to submit a representative sample of the work they wish to put in the store (12-15 pieces), with suggested retail pricing, for consideration to a jury of the owners for review. Our goal will be to pull together an eclectic sampling of different kinds of work for our customers. Silversmiths, jewelers and beading artists of all persuasions are welcome to apply.</p>
+        <p>If you are interested in submitting your work for consideration, please complete the consignment form here or send an email to Mary at <a href="mailto:mary@nomadbeads.com">mary@nomadbeads.com</a></p>
 
         <h2>Opening Party</h2>
-        <p>Save the date - Adorned will have a grand opening party in the beginning of April. Please join us for drinks, desserts, and Boulder’s finest work. More details coming soon!</p>
+        <p>Save the date - Adorned will have a grand opening this April. Please join us for drinks, desserts, and Boulder’s finest work. More details coming soon!</p>
       </div>
       <div class="secondary">
         <div class="linkbox">
@@ -39,14 +42,15 @@
               <button id='saveemail' type="saveemail" onclick='recordEmail();'>Submit</button>
             </div>
           </div>
-          <div>Like us on <a href="https://www.facebook.com/adornedbynomad/">Facebook</a></div>
-          <div>Visit <a href="http://www.nomadbeads.com/">Nomad</a></div>
+          <div>Like Adorned on <a href="https://www.facebook.com/adornedbynomad/">Facebook</a></div>
+          <div>Visit our sister store <a href="http://www.nomadbeads.com/">Nomad</a></div>
         </div>
         <div class="linkbox">
           <h3>Join</h3>
-          <div>Consignment Form</div>
+          <div><a href="http://goo.gl/forms/oVrVGDEKvz">Adorned Consignment Application</a></div>
         </div>
       </div>
+    </div>
     </div>
     <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
     <script src="email.js"></script>
