@@ -5,6 +5,12 @@
     <title>Adorned by nomad</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href='https://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
+    <meta property="og:url"           content="http://www.adornedbynomad.com/index.html" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Adorned By Nomad" />
+    <meta property="og:description"   content="Jewerly and gifts by local Boulder artists." />
+    <meta property="og:image"         content="http://www.adornedbynomad.com/images/adorned_1.jpg" />
+    <meta name="keywords" content="Jewerly, Gifts, Boulder, Colorado, consignment, nomad, beads"/>
   </head>
   <body>
     <div class="header" id="header">
@@ -31,17 +37,18 @@
 
         <h2>Opening Party</h2>
         <p>Save the date - Adorned will have a grand opening this April. Please join us for drinks, desserts, and Boulder’s finest work. More details coming soon!</p>
+      <p><center><div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button"></div></center></p>
       </div>
       <div class="secondary">
         <div class="linkbox">
           <h3>Connect</h3>
-          <div>Like Adorned on <a href="https://www.facebook.com/adornedbynomad/">Facebook</a></div>
+          <div>Like Adorned on <a href="https://www.facebook.com/adornedbynomad/">Facebook</a></div> 
           <div>Visit our sister store <a href="http://www.nomadbeads.com/">Nomad</a></div>
           <div>Join our mailing list
             <div class="email">
               <div class="message">Email Recorded</div>
-              <input type="text" id="email" onkeyup="handleKey(event)">
-              <button id='saveemail' type="saveemail" onclick='recordEmail();'>Submit</button>
+              <input type="text" id="email">
+              <button id='saveemail' type="saveemail">Submit</button>
             </div>
          </div>
        </div>
@@ -52,6 +59,7 @@
       </div>
     </div>
     </div>
+    <div id="fb-root"></div>
     <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
     <script src="email.js"></script>
     <script src="cyclebackground.js"></script>
