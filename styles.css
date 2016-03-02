@@ -4,6 +4,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: Times, "Times New Roman", Georgia, serif;
+  background-color: #FBFDF2;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -19,15 +20,22 @@ a:link, a:visited, a:hover, a:active {
   justify-content: center;
 }
 
+#hiddenimage {
+ position: relative;
+ visibility: hidden;
+}
+
 .imgContainer {
   position: relative;
-  width: 850px;
-  height: 315px;
+  min-width: 450px;
+  width: 85%;
+  aheight: 250px;
 }
 
 .header img {
   position: absolute;
-  height: 315px;
+  width: 100%;
+  aheight: 250px;
   margin: 0 auto;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
@@ -92,7 +100,7 @@ a:link, a:visited, a:hover, a:active {
   display: flex;
   flex-direction: row;
   overflow: visible;
-  max-width: 850px;
+  width: 85%;
   box-sizing: border-box;
   padding: 0 10px;
 }
