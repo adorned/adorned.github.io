@@ -4,7 +4,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: Times, "Times New Roman", Georgia, serif;
-  background-color: #FBFDF2;
+  background-color: white; //#FBFDF2;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -14,7 +14,7 @@ a:link, a:visited, a:hover, a:active {
 
 .header {
   position: relative;
-  background-color: #FBFDF2;
+  background-color: white; //#FBFDF2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,7 +93,7 @@ a:link, a:visited, a:hover, a:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #FBFDF2;
+  background-color: white; //#FBFDF2;
 }
 
 .content {
